@@ -1,0 +1,57 @@
+<div class="container-fluid bg-light p-2">
+    <div class=" d-flex justify-content-between mb-3">
+        <div>
+    <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+
+    <div class="row">
+      <button type="button" class="btn btn-warning " style="margin: 5px;">Add New</button>
+      <button type="button" class="btn btn-outline-warning margin-left" style="margin: 5px;" >Configure</button>
+      <button type="button" class="btn btn-outline-warning margin-left" style="margin: 5px;">Delete</button>
+      <button type="button" class="btn btn-outline-warning" style="margin: 5px;" span<i class="bi bi-file-earmark-fill"></i>>Archive</button>
+      </div>
+    </div>
+ 
+<div class="card border p-2" style="margin: 1px;">
+    <!-- <div class="container"> -->
+<table class="table table-striped table-border table-sm row-border hover border" style="margin: 5px;">
+    <thead>
+      <tr>  
+        <th>CustomerName</th>
+        <th>Truck</th>
+        <th>Spec</th>
+        <th>Mixer Size</th>
+        <th>Tag Axle</th>
+        <th>Last Changed</th>
+        <th>WB</th>
+        <th>CA</th>
+        <th>Boggle</th>
+        <th>Front</th>
+        <th>Rear</th>
+        <th>Pusher Axle</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let ele of dataSource">
+        <td>{{ele.CustomerName}}</td>
+        <td>{{ele.Truck}}</td>
+        <td> {{ele.Spec}}</td>
+        <td> {{ele.MixerSize}}</td>
+        <td> {{ele.TagAxle}}</td>
+        <td> {{ele.LastChanged}}</td>
+        <td> {{ele.WB}}</td>
+        <td> {{ele.CA}}</td>
+        <td> {{ele.Boggle}}</td>
+        <td> {{ele.Front}}</td>
+        <td> {{ele.Rear}}</td>
+        <td> {{ele.PusherAxle}}</td>
+      </tr>
+    </tbody>
+  </table>
+<!-- </div> -->
+</div>
+</div>
